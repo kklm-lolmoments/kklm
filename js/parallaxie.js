@@ -35,7 +35,7 @@
                 var pos_y =  local_options.offset + ($el.offset().top - $(window).scrollTop()) * (1 - local_options.speed );
                 $el.css({
                     'background-image': image_url,
-                    'background-size': 'auto',
+                    'background-size': local_options.size,
                     'background-repeat': local_options.repeat,
                     'background-attachment': 'fixed',
                     'background-position': local_options.pos_x + ' ' + pos_y + 'px',
